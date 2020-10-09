@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Create new User</title>
+</head>
+<body>
+<div align="center">
+    <h1>Create new User</h1>
+    <form action="#" th:action="@{/save}" th:object="${user}" method="post">
+        <table border="2" cellpadding="20" bgcolor="black">
+            <tr>
+                <td bgcolor="#5f9ea0">Name</td>
+                <td bgcolor="#5f9ea0"><input type="text" th:field="*{name}"></td>
+            </tr>
+            <tr>
+                <td bgcolor="#5f9ea0">LastName</td>
+                <td bgcolor="#5f9ea0"><input type="text" th:field="*{lastName}"></td>
+            </tr>
+            <tr>
+                <td bgcolor="#5f9ea0">Age</td>
+                <td bgcolor="#5f9ea0"><input type="text" th:field="*{age}"></td>
+            </tr>
+            <tr>
+                <td colspan="2" bgcolor="#5f9ea0" align="center">
+                    <button type="submit">Save</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
