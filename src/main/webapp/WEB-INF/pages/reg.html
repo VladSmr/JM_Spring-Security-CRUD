@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body>
+<form action="#" th:action="@{/reg}" th:object="${user}" method="post">
+    <table border="2" cellpadding="10" align="center" bgcolor="black">
+        <tr>
+            <td bgcolor="#5f9ea0">Name</td>
+            <td bgcolor="#5f9ea0"><input type="text" th:field="*{name}"></td>
+        </tr>
+        <tr>
+            <td bgcolor="#5f9ea0">Pass</td>
+            <td bgcolor="#5f9ea0"><input type="password" th:field="*{password}"></td>
+        </tr>
+        <tr>
+            <td colspan="2" bgcolor="#5f9ea0" align="center">
+                <button type="submit">Create</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
